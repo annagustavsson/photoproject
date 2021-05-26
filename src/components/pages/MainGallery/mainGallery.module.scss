@@ -1,0 +1,24 @@
+// .pageContainer {
+//     position: absolute;
+//     right: 0;
+//     background-color: rgb(216, 231, 231);
+//     display: flex;
+//     // justify-content: center;
+//     // flex-wrap: wrap;
+// }
+
+.imageGalleryContainer {
+    display: flex;
+    //justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    border: 2px solid rgb(0, 8, 255);
+
+    position: absolute;
+    right: 0;
+
+
+    
+}
+
+

@@ -1,0 +1,26 @@
+.toggleContainer {
+    display: flex;
+    max-width: 30rem;
+    //border: 2px solid red;
+}
+
+.toggleButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1rem;
+    margin-left: 10px;
+    padding: 0.5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    //border: 2px solid blue;
+
+    .active {
+        //background-color: #F7F7F8;
+        text-decoration: underline;
+    
+    }
+
+
+}
