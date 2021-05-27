@@ -19,7 +19,7 @@ const CurrentCollectionContextProvider = ({ children }) => {
     },
     {
         name: 'Vitabergsparken',
-        photos: [sofia1, sofia1],
+        photos: [sofia1, sofia1, sofia1, sofia1, sofia1, sofia1],
         colortheme: 'beige'
     }, 
     {

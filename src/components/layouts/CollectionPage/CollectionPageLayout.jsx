@@ -1,9 +1,11 @@
 import React, {useEffect} from 'react'
-import CoverPage from "../../common/CoverPage/CoverPage"
 import { useLocation } from 'react-router-dom';
 import {useCurrentCollection} from "../../../contexts/CurrentCollectionContext"
+import CoverPage from "../../common/CoverPage/CoverPage"
+import CollectionGallery from "../../pages/CollectionGallery/CollectionGallery"
 
-const CollectionPage = () => {
+
+const CollectionPageLayout = () => {
 
     const {setCollectionByPath, currentCollection} = useCurrentCollection()
 
@@ -13,6 +15,7 @@ const CollectionPage = () => {
 
     useEffect(() => {
         setCollectionByPath(currentPhotoCollection) 
+        window.scrollTo(0, 0)
     }, [])
     
 
@@ -20,8 +23,9 @@ const CollectionPage = () => {
         currentCollection &&
         <div>
             <CoverPage coverPhoto={currentCollection.photos[0]} name={currentCollection.name}/>
+            <CollectionGallery collection={currentCollection}/>
         </div>
     )
 }
 
-export default CollectionPage
+export default CollectionPageLayout

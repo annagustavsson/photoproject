@@ -12,42 +12,12 @@ const MainGallery = () => {
 
     const {photoCollections} = useCurrentCollection()
 
-    // const photoCollections = [ // TODO: ha i context istället
-    //     {
-    //         name: 'Hagaparken',
-    //         photos: [sofia1, sofia1],
-    //         colortheme: 'green'
-    //     },
-    //     {
-    //         name: 'Vitabergsparken',
-    //         photos: [sofia1, sofia1],
-    //         colortheme: 'beige'
-    //     }, 
-    //     {
-    //         name: 'Kungsträdgården',
-    //         photos: [sofia1, sofia1],
-    //         colortheme: 'beige'
-    //     },
-    //     {
-    //         name: 'Vanadislunden',
-    //         photos: [sofia1, sofia1],
-    //         colortheme: 'red'
-    //     },
-    //     {
-    //         name: 'NorraDjurgården',
-    //         photos: [sofia1, sofia1],
-    //         colortheme: 'beige'
-    //     }
-    //   ] // ha coverphoto som photos[0]
-    
-
-
     return (
         <>
         <Sidebar/>
-        <div className={styles.imageGalleryContainer}>
+        <div className={styles.mainGalleryContainer}>
             {photoCollections.map(item=> 
-            <ImageContainer key={item.name} coverPhoto={item.photos[0]} text={item.name} collection={item}/>)}
+            <ImageContainer key={item.name} photo={item.photos[0]} text={item.name} collection={item}/>)}
         </div>
         </>
     )

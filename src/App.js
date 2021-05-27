@@ -6,8 +6,7 @@ import {
   Route,
 } from "react-router-dom";
 import MainPageLayout from "./components/layouts/MainPage/MainPageLayout"
-//import CoverPage from "./components/common/CoverPage/CoverPage"
-import CollectionPage from "./components/layouts/CollectionPage/CollectionPage"
+import CollectionPageLayout from "./components/layouts/CollectionPage/CollectionPageLayout"
 
 function App() {
   return (
@@ -16,10 +15,8 @@ function App() {
       <Router>
         <Switch>
           <div>
-            {/* <Route path="/" exact render={() => <HomePage/>}/> */}
             <Route path="/" exact render={() => <MainPageLayout/>}/>
-            {/* <Route path="/:id" exact render={() => <CoverPage/>} /> */}
-            <Route path="/:id" exact render={() => <CollectionPage/>} />
+            <Route path="/:id" exact render={() => <CollectionPageLayout/>} />
           </div>
         </Switch>
       </Router>
