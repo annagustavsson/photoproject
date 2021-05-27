@@ -1,0 +1,31 @@
+.container {
+    height: 100vh;
+
+    .green {
+        background-color: #A9A965;
+    }
+
+    .red {
+        background-color: #801818;
+    }
+
+    .beige {
+        background-color: #D5C9BD;
+    }
+
+    // .tulips {
+    //     background-image: ;
+    // }
+
+    // .flowers {
+    //     background-image: ;
+    // }
+}
+
+.rightBox {
+    width: 50vw;
+    position: absolute;
+    right: 0;
+    direction: flex;
+    align-items: center;
+}

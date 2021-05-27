@@ -1,9 +1,12 @@
 import React from 'react'
+//import {useCurrentCollection} from "../../../contexts/CurrentCollectionContext"
+import styles from "../CoverPage/coverPage.module.scss"
 
-const Coverpage = ({img, colortheme}) => {
+const Coverpage = ({coverPhoto}) => {
+
     return (
-        <div className={StyleSheet.colortheme}>
-            <img src={img}/>
+        <div className={styles.colortheme}>
+            <img src={coverPhoto} alt=''/>
         </div>
     )
 }

@@ -1,12 +1,13 @@
 import React from "react";
-import CurrentCollectionContextProvider from "./contexts/CurrentCollection"
+import CurrentCollectionContextProvider from "./contexts/CurrentCollectionContext"
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
-import HomePage from "../src/components/pages/HomePage/HomePage"
-import MainPageLayout from "./components/layouts/mainPageLayout"
+import MainPageLayout from "./components/layouts/MainPage/MainPageLayout"
+//import CoverPage from "./components/common/CoverPage/CoverPage"
+import CollectionPage from "./components/layouts/CollectionPage/CollectionPage"
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
           <div>
             {/* <Route path="/" exact render={() => <HomePage/>}/> */}
             <Route path="/" exact render={() => <MainPageLayout/>}/>
+            {/* <Route path="/:id" exact render={() => <CoverPage/>} /> */}
+            <Route path="/:id" exact render={() => <CollectionPage/>} />
           </div>
         </Switch>
       </Router>
