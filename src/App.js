@@ -1,4 +1,5 @@
 import React from "react";
+import CurrentCollectionContextProvider from "./contexts/CurrentCollection"
 import {
   BrowserRouter as Router,
   Switch,
@@ -10,14 +11,16 @@ import MainPageLayout from "./components/layouts/mainPageLayout"
 function App() {
   return (
 
-    <Router>
-      <Switch>
-        <div>
-          {/* <Route path="/" exact render={() => <HomePage/>}/> */}
-          <Route path="/" exact render={() => <MainPageLayout/>}/>
-        </div>
-      </Switch>
-    </Router>
+    <CurrentCollectionContextProvider>
+      <Router>
+        <Switch>
+          <div>
+            {/* <Route path="/" exact render={() => <HomePage/>}/> */}
+            <Route path="/" exact render={() => <MainPageLayout/>}/>
+          </div>
+        </Switch>
+      </Router>
+    </CurrentCollectionContextProvider>
   
   );
 }
