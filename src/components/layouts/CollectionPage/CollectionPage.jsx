@@ -19,7 +19,7 @@ const CollectionPage = () => {
     return (
         currentCollection &&
         <div>
-            <CoverPage coverPhoto={currentCollection.photos[0]}/>
+            <CoverPage coverPhoto={currentCollection.photos[0]} name={currentCollection.name}/>
         </div>
     )
 }

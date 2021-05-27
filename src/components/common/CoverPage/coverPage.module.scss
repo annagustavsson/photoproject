@@ -1,31 +1,39 @@
 .container {
     height: 100vh;
+    display: flex;
+    align-items: center;
+}
 
-    .green {
-        background-color: #A9A965;
-    }
+//TODO: lägg dessa i subclass istället
+//TODO: gör färgvariabler av dessa
+.green {
+    background-color: #A9A965;
+}
 
-    .red {
-        background-color: #801818;
-    }
+.red {
+    background-color: #801818;
+}
 
-    .beige {
-        background-color: #D5C9BD;
-    }
+.beige {
+    background-color: #D5C9BD;
 
-    // .tulips {
-    //     background-image: ;
-    // }
 
-    // .flowers {
-    //     background-image: ;
-    // }
 }
 
 .rightBox {
-    width: 50vw;
     position: absolute;
     right: 0;
-    direction: flex;
-    align-items: center;
+    display: flex;
+    width: 50vw;
+    justify-content: flex-end;
+    margin-right: 2rem;
+}
+
+.img {
+    max-height: 90vh;
+    border-bottom: 0.2rem solid black;
+    border-top: 0.2rem solid black;
+    border-right: 0.5rem solid black;
+    border-left: 0.2rem solid black;
+
 }
