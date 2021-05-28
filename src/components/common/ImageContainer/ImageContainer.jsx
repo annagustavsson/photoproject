@@ -1,7 +1,6 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom';
 import styles from "./imageContainer.module.scss"
-import {useCurrentCollection} from "../../../contexts/CurrentCollectionContext"
 
 const ImageContainer = ({photo, text}) => {
     
