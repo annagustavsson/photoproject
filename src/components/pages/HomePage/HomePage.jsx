@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "./homePage.module.scss"
-import sofia1 from "../../../resources/images/sofia/1.png"
+import sofia1 from "../../../resources/images/sofia/3.png"
 
 import ToggleMenu from "../../common/toggleMenu/ToggleMenu"
 

@@ -5,6 +5,8 @@ import ImageContainer from "../../common/ImageContainer/ImageContainer"
 
 const CollectionGallery = ({collection}) => {
 
+    //TODO: Ska man kunna trycka upp en bild i storskärm?
+
     return (
         <div>
              <div className={styles.collectionGalleryContainer}>
